@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rt.animus.example.views.VectorDrawableView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:paddingVertical="@dimen/content_padding_vertical">
+
+  <ImageView
+    android:id="@+id/anim_board_to_card"
+    android:layout_width="@dimen/vector_drawable_size"
+    android:layout_height="@dimen/vector_drawable_size"
+    android:layout_marginBottom="@dimen/vector_drawable_layout_gap"
+    android:contentDescription="@null"
+    android:src="@drawable/anim_board_to_card" />
+
+  <ImageView
+    android:id="@+id/anim_clock"
+    android:layout_width="@dimen/vector_drawable_size"
+    android:layout_height="@dimen/vector_drawable_size"
+    android:layout_marginBottom="@dimen/vector_drawable_layout_gap"
+    android:contentDescription="@null"
+    android:src="@drawable/anim_clock" />
+
+  <ImageView
+    android:id="@+id/anim_checked"
+    android:layout_width="@dimen/vector_drawable_size"
+    android:layout_height="@dimen/vector_drawable_size"
+    android:layout_marginBottom="@dimen/content_padding_vertical"
+    android:contentDescription="@null"
+    android:src="@drawable/anim_checked" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/button_reset"
+    style="@style/Widget.MaterialComponents.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/reset" />
+
+</rt.animus.example.views.VectorDrawableView>

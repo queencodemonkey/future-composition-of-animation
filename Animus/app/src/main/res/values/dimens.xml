@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="content_padding_vertical">24dp</dimen>
+
+  <dimen name="clock_size">240dp</dimen>
+  <dimen name="clock_tick_length">24dp</dimen>
+  <dimen name="clock_stroke_width">8dp</dimen>
+  <dimen name="clock_hand_width">6dp</dimen>
+
+  <dimen name="vector_drawable_size">100dp</dimen>
+  <dimen name="vector_drawable_layout_gap">12dp</dimen>
+  <dimen name="physics_vector_size">160dp</dimen>
+
+</resources>

@@ -1,0 +1,107 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="20dp"
+            android:height="20dp"
+            android:viewportWidth="20"
+            android:viewportHeight="20">
+            <path
+                android:name="path"
+                android:pathData="M 10 1 C 12.386 1 14.677 1.949 16.364 3.636 C 18.051 5.323 19 7.614 19 10 C 19 12.386 18.051 14.677 16.364 16.364 C 14.677 18.051 12.386 19 10 19 C 7.614 19 5.323 18.051 3.636 16.364 C 1.949 14.677 1 12.386 1 10 C 1 7.614 1.949 5.323 3.636 3.636 C 5.323 1.949 7.614 1 10 1"
+                android:strokeColor="#42526e"
+                android:strokeWidth="2"
+                android:strokeLineCap="round"
+                android:strokeMiterLimit="10"/>
+            <group
+                android:name="minute"
+                android:pivotX="10"
+                android:pivotY="10"
+                android:rotation="45">
+                <path
+                    android:name="minute_hand"
+                    android:pathData="M 10 4 L 10 10"
+                    android:strokeColor="#42526e"
+                    android:strokeWidth="2"
+                    android:trimPathStart="1"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round"/>
+            </group>
+            <group
+                android:name="hour"
+                android:pivotX="10"
+                android:pivotY="10"
+                android:rotation="270">
+                <path
+                    android:name="hour_hand"
+                    android:pathData="M 10 10 L 12.5 12.5"
+                    android:strokeColor="#42526e"
+                    android:strokeWidth="2"
+                    android:trimPathEnd="0"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathEnd"
+                android:duration="700"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="minute_hand">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathStart"
+                android:startOffset="150"
+                android:duration="400"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/accelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="hour_hand">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathEnd"
+                android:startOffset="50"
+                android:duration="401"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/accelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="hour">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:startOffset="299"
+                android:duration="701"
+                android:valueFrom="270"
+                android:valueTo="360"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="minute">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:startOffset="350"
+                android:duration="650"
+                android:valueFrom="45"
+                android:valueTo="360"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

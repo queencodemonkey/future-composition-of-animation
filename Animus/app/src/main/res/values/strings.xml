@@ -1,0 +1,31 @@
+<resources>
+  <string name="app_name">Animus • アニムス</string>
+
+  <string name="api_low_level">Low-Level APIs</string>
+  <string name="api_animated_vectors">Animated Vectors</string>
+  <string name="api_android_animator">android.animation.Animator</string>
+  <string name="api_android_animator_set">AnimatorSet</string>
+  <string name="api_android_physics">Physics-Based Animation</string>
+  <string name="api_android_transitions">Transitions</string>
+  <string name="api_android_state_list_animator">Transitions</string>
+  <string name="api_compose_animation">androidx.compose.animation</string>
+  <string name="api_compose_animated_visibility">AnimatedVisibility</string>
+  <string name="api_compose_crossfade">CrossFade</string>
+  <string name="api_compose_content_size">animateContentSize</string>
+  <string name="api_compose_update_transition">updateTransition</string>
+  <string name="api_compose_animate_as_state">animate*AsState</string>
+  <string name="api_compose_animatable">Animatable</string>
+  <string name="api_compose_animate">AnimationState/animate</string>
+  <string name="api_compose_animation_spec">AnimationSpec</string>
+  <string name="api_compose_easing">Easing</string>
+  <string name="api_compose_animation_vector">Animation Vector</string>
+
+  <!-- region === Common === -->
+
+  <string name="reset">Reset</string>
+  <string name="label_image_view">ImageView</string>
+  <string name="spring">Spring!</string>
+
+  <!-- endregion -->
+
+</resources>
